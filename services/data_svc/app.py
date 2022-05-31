@@ -105,12 +105,12 @@ def transform(tx):
 
     # Keep it out of the tx data as since we can't calculate it at this point in time
     # The terminal risk can only be calculated once the fraud assessment has taken place.
-    #tx['TERMINAL_ID_NB_TX_1DAY_WINDOW'] = 0
-    #tx['TERMINAL_ID_RISK_1DAY_WINDOW'] = 0
-    #tx['TERMINAL_ID_NB_TX_7DAY_WINDOW'] = 0
-    #tx['TERMINAL_ID_RISK_7DAY_WINDOW'] = 0
-    #tx['TERMINAL_ID_NB_TX_30DAY_WINDOW'] = 0
-    #tx['TERMINAL_ID_RISK_30DAY_WINDOW'] = 0
+    tx['TERMINAL_ID_NB_TX_1DAY_WINDOW'] = 0
+    tx['TERMINAL_ID_RISK_1DAY_WINDOW'] = 0
+    tx['TERMINAL_ID_NB_TX_7DAY_WINDOW'] = 0
+    tx['TERMINAL_ID_RISK_7DAY_WINDOW'] = 0
+    tx['TERMINAL_ID_NB_TX_30DAY_WINDOW'] = 0
+    tx['TERMINAL_ID_RISK_30DAY_WINDOW'] = 0
 
     return tx
 
